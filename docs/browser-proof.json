@@ -1,0 +1,25 @@
+{
+  "product": "dalel-check",
+  "as_of": "2026-10-25T19:36:13.262596+00:00",
+  "synthetic_only": true,
+  "actual_css_width": 1280,
+  "scroll_width": 1280,
+  "mobile_1440": "not_verified; prior capability mismatch not retried",
+  "flows": [
+    "RU source+v3 checklist:incomplete refused;SCOPE36..58;DATE66..76 and99..109 manually conflicting;stale9 whole workspace/audit unchanged,note retained;fresh nativeTabReturn saved needs_evidence.",
+    "KK CRLF source:DOM14..35 mapped to raw15..36,exact quote оқу картасының үлгісі. MissingDATE manual preview,then explicit edit to supported47..57,version2.",
+    "Archived pub/source/checklist block new worksheet;old worksheet continues exact snapshot. Unrelated beta document caused stale19 refusal,note retained,whole workspace/audit unchanged. Fresh complete sealed.",
+    "Final1checklist/2requirements/1publication/3documents/2worksheets/4findings/2reports,workspace20/audit20. First report unchanged.",
+    "12authorizedHTTP400 whole20/audit20 unchanged. Ownedrestart57478→57669 preserved all workspace/audit/all5tables;32 prior server DBs unchanged. Reload read same saved complete."
+  ],
+  "keyboard": "Native text selection plus Tab/Return actual report submit;focusH1 after success/errornotice on refusal;native details expanded",
+  "language": "UIru;authoredKKrequirements/quotes and finding rationale taggedkk;no automatic translation",
+  "stale_evidence": [
+    "work/program/dalel-stale9-before.json",
+    "work/program/dalel-stale9-after.json",
+    "work/program/dalel-stale19-before.json",
+    "work/program/dalel-stale19-after.json"
+  ],
+  "http_refusals": "work/program/dalel-http-refusals.json",
+  "historical_setup_failures": "First restore-test fixture used current clock before synthetic20:00;fixed fixture clock. HTTP initially expected users403 but inherited usersGET shared;new product intentionally restricted account list to admin. Final24pass. Not external audit."
+}

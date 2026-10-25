@@ -1,0 +1,77 @@
+{
+  "scope": {
+    "product": "DalelCheck original bounded v0.1",
+    "review": "Fresh finish review of a narrow, code-led Operate extension of the existing Shared Work Cabinet.",
+    "reviewed_sources": [
+      "PRODUCT.md",
+      "public/app.js",
+      "public/styles.css",
+      "public/index.html",
+      ".impeccable/surfaces/public-app-js.md",
+      "../koshi-map/DESIGN.md"
+    ],
+    "craft_floor": "/Users/wpalish/.codex/skills/impeccable/reference/craft-floor.md",
+    "captures": [
+      { "path": ".impeccable/review/finding-form-1280.jpg", "width": 1280, "height": 1523, "valid": true },
+      { "path": ".impeccable/review/missing-preview-1280.jpg", "width": 1280, "height": 2498, "valid": true },
+      { "path": ".impeccable/review/preview-1280.jpg", "width": 1280, "height": 2622, "valid": true },
+      { "path": ".impeccable/review/stale-refusal-1280.jpg", "width": 1280, "height": 2691, "valid": true },
+      { "path": ".impeccable/review/report-1280.jpg", "width": 1280, "height": 1653, "valid": true },
+      { "path": ".impeccable/review/complete-1280.jpg", "width": 1280, "height": 1595, "valid": true },
+      { "path": ".impeccable/review/source-open-1280.jpg", "width": 1280, "height": 2149, "valid": true }
+    ],
+    "capture_validity": "All seven supplied files were opened. Each is a nonblank full-page state with the document top, correct state content and intact footer; pixel dimensions were independently read. These are the supplied actual 1280 CSS-pixel desktop states.",
+    "authority": "The inherited KoshiMap DESIGN.md and current source define the cabinet. No approved comp or quality-bar board was supplied or required for this scoped inherited extension; no comparison to an invented visual world was made.",
+    "context_loading": "The builder reported its original launcher call ran at the wrong root and subsequently read the actual product and inherited context directly. In this independent reviewer session, one context call from dalel-check with --target public/app.js resolved PRODUCT.md and the matching surface brief correctly. It found no local DESIGN.md; the supplied inherited DESIGN.md was read directly.",
+    "detector": "The builder reports one static detector run with [] at work/program/dalel-ui-detect.json. This reviewer did not rerun it or treat that result as a browser, security or accessibility verdict.",
+    "behavior_evidence": "The builder reports real native text selection, CRLF DOM-to-source offset translation, server exact quotes and a keyboard-saved report. The captures and source are consistent with those reports; this reviewer did not operate the browser or independently repeat those behaviors.",
+    "limits": [
+      "Only the named sources and seven supplied desktop states were reviewed.",
+      "No mobile, 390px, 1440px, touch, screen-reader or exhaustive keyboard verification.",
+      "No exhaustive empty, long-content, hover, loading, role or archive state coverage.",
+      "No backend, concurrency, account-isolation, restore-authenticity, transport or full security certification.",
+      "No claim about real documents, legal validity, integrations or customer outcomes."
+    ],
+    "implementation_edits": false
+  },
+  "strengths": {
+    "persistence": "PRODUCT.md and the target-specific direction contract are present. The inherited visual authority describes the same palette, native controls, language treatment and flat cabinet composition seen in the supplied captures.",
+    "fidelity_matrix": [
+      { "element": "TYPE", "result": "match", "evidence": "System typography, fixed task-heading scale, restrained tracking, labelled native controls and readable supporting text follow the inherited Operate authority." },
+      { "element": "MATERIAL", "result": "match", "evidence": "Flat white forms, exact quote blocks, one-pixel boundaries and native disclosures preserve the cabinet without simulated physical material or ornamental media." },
+      { "element": "GROUND", "result": "match", "evidence": "The source retains the inherited cool #edf3f8 workspace, #183e60 navigation, white surfaces and #126653 explicit actions; the captures show the same cool hierarchy." },
+      { "element": "Task topology", "result": "match", "evidence": "Worksheet title, owner, language and publication version precede disclosures and ordered findings; the complete preview precedes the explicit one-time save form." },
+      { "element": "Signature exact-source interaction", "result": "match", "evidence": "The finding capture shows a read-only native source textarea, labelled coordinate fields, selection-transfer buttons and manual rationale. Source maps textarea CRLF offsets back to preserved source; rendered quotes display exact offsets." },
+      { "element": "Preview, refusal and saved state", "result": "match", "evidence": "The preview says it is unsaved, stale refusal changes its heading and preserves the entered rationale, and saved reports show actor, time, digest and frozen findings without the report-save form." },
+      { "element": "Manual semantic boundary", "result": "match", "evidence": "Supported, missing and conflicting states are written explicitly. needs_evidence and complete carry local explanations; nearby copy disclaims semantic, truth, sufficiency and legal verification." },
+      { "element": "Authored RU/KK evidence", "result": "match", "evidence": "Both requirement texts remain visible; authored nodes receive language attributes. Quotes and raw source preserve visible line breaks and wrap without clipping in the supplied states." }
+    ],
+    "ceiling": "Reached for this narrow inherited desktop Operate scope. Precision, native affordances and clear state language carry the finish; additional ornament, display lettering or animation would conflict with the stated extension boundary.",
+    "keep": "Preserve the exact source/quote relationship, bilingual authored text, explicit unsaved versus historical states, one-time report action and the restrained cabinet shell."
+  },
+  "material_findings": [],
+  "nonblocking_notes": [
+    {
+      "id": "DC-N01",
+      "note": "Source-defined responsive breakpoints and focus semantics are present, but this packet does not establish their rendered behavior outside the supplied 1280px states. Keep the verdict at that desktop scope."
+    },
+    {
+      "id": "DC-N02",
+      "note": "The reviewer context reports product-schema-legacy. The init command owns that optional context migration; no project-context rewrite was performed during review."
+    },
+    {
+      "id": "DC-N03",
+      "note": "The reviewer context reports an unset buildPath preference. This Operate extension remains code-led. The optional comp-first/code-first standing preference concerns future landing or showcase surfaces and does not block this review."
+    },
+    {
+      "id": "DC-N04",
+      "note": "A DalelCheck-specific documentation pass remains the builder's finishing responsibility. Preserve the inherited system, document only observed product-specific states and keep every shipping evidence raster's provenance and capture limits explicit."
+    }
+  ],
+  "disposition": {
+    "word": "ship",
+    "applies_to": "The supplied DalelCheck v0.1 UI/source and seven valid actual 1280 CSS-pixel desktop states only.",
+    "basis": "No missing or contradicted element and no material UI fix was found within this reviewed packet. This is a bounded visual and interaction-source verdict, not a release-readiness or backend/security certification.",
+    "required_ui_fix_count": 0
+  }
+}

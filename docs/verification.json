@@ -1,0 +1,72 @@
+{
+  "product": "dalel-check",
+  "title": "DalelCheck",
+  "reference": 15,
+  "version": "0.1.0",
+  "as_of": "2026-10-25T19:36:13.262596+00:00",
+  "tests": {
+    "passed": 24,
+    "failed": 0,
+    "log": "docs/test-output.txt"
+  },
+  "browser": {
+    "status": "ui_workflow_passed",
+    "synthetic_only": true,
+    "proof": "docs/browser-proof.json",
+    "desktop": "docs/complete-1280.jpg",
+    "actual_viewports": [
+      1280
+    ],
+    "mobile": "not_verified",
+    "external_action": false
+  },
+  "acceptance": [
+    "RU source+v3 checklist:incomplete refused;SCOPE36..58;DATE66..76 and99..109 manually conflicting;stale9 whole workspace/audit unchanged,note retained;fresh nativeTabReturn saved needs_evidence.",
+    "KK CRLF source:DOM14..35 mapped to raw15..36,exact quote оқу картасының үлгісі. MissingDATE manual preview,then explicit edit to supported47..57,version2.",
+    "Archived pub/source/checklist block new worksheet;old worksheet continues exact snapshot. Unrelated beta document caused stale19 refusal,note retained,whole workspace/audit unchanged. Fresh complete sealed.",
+    "Final1checklist/2requirements/1publication/3documents/2worksheets/4findings/2reports,workspace20/audit20. First report unchanged.",
+    "12authorizedHTTP400 whole20/audit20 unchanged. Ownedrestart57478→57669 preserved all workspace/audit/all5tables;32 prior server DBs unchanged. Reload read same saved complete.",
+    "24passing domain/storage/HTTP tests; seven full1280 captures opened;review status in docs/finish-review.json."
+  ],
+  "limits": [
+    "Original bounded synthetic manual workflow;no Gumloopcode/brand/integration/AI/LLM/OCR/files/external APIs/secrets/real documents/messages/payments/customer results.",
+    "1..12 ordered RU/KK requirements;plain text1..12000 UTF16 after outertrim. No normalization/casefold/translation/semantic evaluation.",
+    "Exact contiguous spans,zero-based UTF16 start inclusive/end exclusive;split surrogate/blank/outofbounds rejected;conflictingtwo ordered disjoint spans. Reuse across requirements allowed.",
+    "supported/missing/conflicting are manual assertions. complete only allsupported,not truth/sufficiency/absence/legalvalidity.",
+    "Original worksheet author alone edits/seals;adminnobypass. One full report,no partial/reopen/reversal;finalfindingsfrozen;no full intermediate draftfinding history.",
+    "Globalrevision conflicts inclunrelated edits;globalUUIDdoc/work/report replay refuses,not idempotentsuccess;clockrollbackbefore sources/findings rejects. Preview/hashoptionalHTTP,nothumanreading.",
+    "Archivechecklist/pub/doc closesnewworksheets;oldworksheets continue snapshots. Worksheetarchivecloses work;findings/reportsnotarchivable.",
+    "Sharedallstaffarea,no tenantisolation. Adminchecklists/requirements/pub/archive/accounts/copies. No UIpasswordreset/sessionrevocation.",
+    "UnsignedJSON/hashconsistency notauthenticity/identity/historicalrights;accounts/auth/auditexcluded,emptyrestoreonly,HTTP2MB;large fullconsistentSQLitebackupseparate.",
+    "Only seven actual1280captures and suppliedsource review;not mobile390/1440/touch/screenreader/fullsecurity/load/publicserverhosting/clientacceptance."
+  ],
+  "runtime": {
+    "pid": 57669,
+    "port": 8855,
+    "script": "work/program/run-dalel-check.mjs",
+    "before": "work/program/dalel-restart-before.json",
+    "after": "work/program/dalel-restart-after.json"
+  },
+  "preservation": {
+    "before": "work/program/dalel-prior-before.json",
+    "after": "work/program/dalel-prior-after.json",
+    "previous_servers": 32,
+    "own_tables_before": "work/program/dalel-tables-before.json",
+    "own_tables_after": "work/program/dalel-tables-after.json",
+    "own_table_count": 5,
+    "sabaqloop_owner_origin": "untouched"
+  },
+  "review": {
+    "status": "ship_bounded_seven_actual1280_captures_and_source",
+    "file": "docs/finish-review.json",
+    "static_detector": "One --json [] invocation,notbrowser/securitycleanbill"
+  },
+  "commercial": {
+    "potential_company_matches": 10,
+    "qualified_buyers": 0,
+    "interest_confirmed": 0,
+    "new_sends": 0
+  },
+  "release_note": "DalelCheck reference15: own versioned bilingual requirements and immutable synthetic text;manual exact UTF16 spans/missing/conflicting plus owner-only whole report.24tests;RU needs_evidence,KK CRLF and complete after sourcearchive;stale9/19 retainsinput and entireworkspace/audit.12HTTP400whole20/audit20;ownedrestart/all5tables/32priorDBspreserved. Only1280UI evidence,noAI/OCR/semantic/external/customerclaim.",
+  "context_loading": "Builder context launcher mistakenly ran in root;actual target PRODUCT/inherited DESIGN/source read directly. Fresh reviewer own context resolved correct project once;not retroactive target-aware builder context."
+}

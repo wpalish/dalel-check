@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: publication snapshots ordered bilingual requirements and content version
+ok 1 - publication snapshots ordered bilingual requirements and content version
+  ---
+  duration_ms: 3.607292
+  type: 'test'
+  ...
+# Subtest: incomplete draft allowed;publication refuses blank bilingual content and absent requirements
+ok 2 - incomplete draft allowed;publication refuses blank bilingual content and absent requirements
+  ---
+  duration_ms: 1.725416
+  type: 'test'
+  ...
+# Subtest: duplicate position/code refuses;publication limit12 and no repeat version after archive
+ok 3 - duplicate position/code refuses;publication limit12 and no repeat version after archive
+  ---
+  duration_ms: 3.698
+  type: 'test'
+  ...
+# Subtest: requirement edits/archive increase parent version;no-op parent stays version
+ok 4 - requirement edits/archive increase parent version;no-op parent stays version
+  ---
+  duration_ms: 0.962125
+  type: 'test'
+  ...
+# Subtest: UTF16 exact spans preserve whitespace/case/CRLF and reject split surrogate pair
+ok 5 - UTF16 exact spans preserve whitespace/case/CRLF and reject split surrogate pair
+  ---
+  duration_ms: 0.213833
+  type: 'test'
+  ...
+# Subtest: supported one span,missing none,conflicting two ordered disjoint spans
+ok 6 - supported one span,missing none,conflicting two ordered disjoint spans
+  ---
+  duration_ms: 1.205625
+  type: 'test'
+  ...
+# Subtest: missing with quote or supported with extra quote and empty rationale refuse unchanged
+ok 7 - missing with quote or supported with extra quote and empty rationale refuse unchanged
+  ---
+  duration_ms: 1.338709
+  type: 'test'
+  ...
+# Subtest: text limits1..12000 and document immutable after trimming edges only
+ok 8 - text limits1..12000 and document immutable after trimming edges only
+  ---
+  duration_ms: 1.671417
+  type: 'test'
+  ...
+# Subtest: full report requires explicit finding for every published requirement
+ok 9 - full report requires explicit finding for every published requirement
+  ---
+  duration_ms: 1.286875
+  type: 'test'
+  ...
+# Subtest: all supported means complete,not semantic validity;reused source spans allowed
+ok 10 - all supported means complete,not semantic validity;reused source spans allowed
+  ---
+  duration_ms: 1.071041
+  type: 'test'
+  ...
+# Subtest: conflict report snapshots both exact quotes;earlier edited finding increments version
+ok 11 - conflict report snapshots both exact quotes;earlier edited finding increments version
+  ---
+  duration_ms: 1.147208
+  type: 'test'
+  ...
+# Subtest: only worksheet author changes findings/seals;admin cannot bypass
+ok 12 - only worksheet author changes findings/seals;admin cannot bypass
+  ---
+  duration_ms: 1.543542
+  type: 'test'
+  ...
+# Subtest: finding cannot move worksheet/requirement;one finding per requirement
+ok 13 - finding cannot move worksheet/requirement;one finding per requirement
+  ---
+  duration_ms: 1.552542
+  type: 'test'
+  ...
+# Subtest: late checklist/requirement edits do not rewrite publication,worksheet or report
+ok 14 - late checklist/requirement edits do not rewrite publication,worksheet or report
+  ---
+  duration_ms: 1.833416
+  type: 'test'
+  ...
+# Subtest: sealed findings and report cannot edit/reopen/archive;worksheet archive keeps report
+ok 15 - sealed findings and report cannot edit/reopen/archive;worksheet archive keeps report
+  ---
+  duration_ms: 2.64375
+  type: 'test'
+  ...
+# Subtest: archived sources/pub/checklist close new worksheets,existing author continues snapshots
+ok 16 - archived sources/pub/checklist close new worksheets,existing author continues snapshots
+  ---
+  duration_ms: 1.338333
+  type: 'test'
+  ...
+# Subtest: archiving unfinished worksheet closes findings and report without deleting history
+ok 17 - archiving unfinished worksheet closes findings and report without deleting history
+  ---
+  duration_ms: 0.910959
+  type: 'test'
+  ...
+# Subtest: global stale revision and replay UUID refuse atomically including unrelated edits
+ok 18 - global stale revision and replay UUID refuse atomically including unrelated edits
+  ---
+  duration_ms: 1.630417
+  type: 'test'
+  ...
+# Subtest: client cannot supply quotes,snapshots,owner,time,counts or outcome
+ok 19 - client cannot supply quotes,snapshots,owner,time,counts or outcome
+  ---
+  duration_ms: 0.89225
+  type: 'test'
+  ...
+# Subtest: clock rollback before source/finding refuses worksheet/seal and preserves all data
+ok 20 - clock rollback before source/finding refuses worksheet/seal and preserves all data
+  ---
+  duration_ms: 0.967666
+  type: 'test'
+  ...
+# Subtest: two SQLite sessions cannot seal old revision then fresh duplicate
+ok 21 - two SQLite sessions cannot seal old revision then fresh duplicate
+  ---
+  duration_ms: 4.584708
+  type: 'test'
+  ...
+# Subtest: file restart and consistent SQLite backup preserve every source,finding,report and audit
+ok 22 - file restart and consistent SQLite backup preserve every source,finding,report and audit
+  ---
+  duration_ms: 5.515583
+  type: 'test'
+  ...
+# Subtest: empty restore resumes owned worksheet;corrupt spans/source/snapshot/report/key/version refuse
+ok 23 - empty restore resumes owned worksheet;corrupt spans/source/snapshot/report/key/version refuse
+  ---
+  duration_ms: 3.26975
+  type: 'test'
+  ...
+# Subtest: HTTP authentication,roles,Origin,CSRF,cookies,privacy,owner and whole stale refusal
+ok 24 - HTTP authentication,roles,Origin,CSRF,cookies,privacy,owner and whole stale refusal
+  ---
+  duration_ms: 163.564292
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 256.393833

@@ -1,0 +1,54 @@
+{
+  "captures": [
+    {
+      "file": "docs/complete-1280.jpg",
+      "source": ".impeccable/review/complete-1280.jpg",
+      "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS",
+      "sha256": "2e097941a16e92e09355230a6440d85c44fb2ce94136255265a2fbad530d70a0",
+      "opened_valid": true
+    },
+    {
+      "file": "docs/preview-1280.jpg",
+      "source": ".impeccable/review/preview-1280.jpg",
+      "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS",
+      "sha256": "802106314a7f9ef64b9e0e12c88e5a63b69ff1f0b3fe72fc65e211b7c103d729",
+      "opened_valid": true
+    },
+    {
+      "file": "docs/report-1280.jpg",
+      "source": ".impeccable/review/report-1280.jpg",
+      "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS",
+      "sha256": "0d7bd5db0b46268f2856da1ef00cf2396d02428f6eeb8799a37c8b097b432394",
+      "opened_valid": true
+    },
+    {
+      "file": "docs/finding-form-1280.jpg",
+      "source": ".impeccable/review/finding-form-1280.jpg",
+      "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS",
+      "sha256": "31dd5d1a23b51f9766c1bb7d9f112bd7743b095ac59612a0211056d52303a5b2",
+      "opened_valid": true
+    },
+    {
+      "file": "docs/missing-preview-1280.jpg",
+      "source": ".impeccable/review/missing-preview-1280.jpg",
+      "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS",
+      "sha256": "5f471c263764a6d78fb61c91c9b58b831ba22de205fe36235f0f2db2c5398359",
+      "opened_valid": true
+    },
+    {
+      "file": "docs/source-open-1280.jpg",
+      "source": ".impeccable/review/source-open-1280.jpg",
+      "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS",
+      "sha256": "cbee1290067941f2fecbff0a34d2be6f07569184a20c0d55b60edc841757a2cf",
+      "opened_valid": true
+    },
+    {
+      "file": "docs/stale-refusal-1280.jpg",
+      "source": ".impeccable/review/stale-refusal-1280.jpg",
+      "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS",
+      "sha256": "31e19afab40b10ba684a9fa69f1c351b61f904f9608fb86190c808625ef9491b",
+      "opened_valid": true
+    }
+  ],
+  "no_pixel_editing": true
+}

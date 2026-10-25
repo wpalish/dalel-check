@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T19:40:10.510610+00:00",
+  "title": "Design System: DalelCheck",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "displayName": "Working Green",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0820 173.03)",
+          "oklch(25% 0.0820 173.03)",
+          "oklch(35% 0.0820 173.03)",
+          "oklch(45% 0.0820 173.03)",
+          "oklch(60% 0.0820 173.03)",
+          "oklch(75% 0.0820 173.03)",
+          "oklch(85% 0.0820 173.03)",
+          "oklch(95% 0.0820 173.03)"
+        ]
+      },
+      "primary-hover": {
+        "displayName": "Deep Working Green",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0718 173.05)",
+          "oklch(25% 0.0718 173.05)",
+          "oklch(35% 0.0718 173.05)",
+          "oklch(45% 0.0718 173.05)",
+          "oklch(60% 0.0718 173.05)",
+          "oklch(75% 0.0718 173.05)",
+          "oklch(85% 0.0718 173.05)",
+          "oklch(95% 0.0718 173.05)"
+        ]
+      },
+      "navy": {
+        "displayName": "Cabinet Navy",
+        "role": "secondary",
+        "tonalRamp": [
+          "oklch(15% 0.0733 248.44)",
+          "oklch(25% 0.0733 248.44)",
+          "oklch(35% 0.0733 248.44)",
+          "oklch(45% 0.0733 248.44)",
+          "oklch(60% 0.0733 248.44)",
+          "oklch(75% 0.0733 248.44)",
+          "oklch(85% 0.0733 248.44)",
+          "oklch(95% 0.0733 248.44)"
+        ]
+      },
+      "ink": {
+        "displayName": "Cabinet Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0513 249.96)",
+          "oklch(25% 0.0513 249.96)",
+          "oklch(35% 0.0513 249.96)",
+          "oklch(45% 0.0513 249.96)",
+          "oklch(60% 0.0513 249.96)",
+          "oklch(75% 0.0513 249.96)",
+          "oklch(85% 0.0513 249.96)",
+          "oklch(95% 0.0513 249.96)"
+        ]
+      },
+      "page": {
+        "displayName": "Cool Workspace",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0093 242.84)",
+          "oklch(25% 0.0093 242.84)",
+          "oklch(35% 0.0093 242.84)",
+          "oklch(45% 0.0093 242.84)",
+          "oklch(60% 0.0093 242.84)",
+          "oklch(75% 0.0093 242.84)",
+          "oklch(85% 0.0093 242.84)",
+          "oklch(95% 0.0093 242.84)"
+        ]
+      },
+      "surface": {
+        "displayName": "White Surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.00)",
+          "oklch(25% 0.0000 0.00)",
+          "oklch(35% 0.0000 0.00)",
+          "oklch(45% 0.0000 0.00)",
+          "oklch(60% 0.0000 0.00)",
+          "oklch(75% 0.0000 0.00)",
+          "oklch(85% 0.0000 0.00)",
+          "oklch(95% 0.0000 0.00)"
+        ]
+      },
+      "line": {
+        "displayName": "Divider Blue",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0278 241.23)",
+          "oklch(25% 0.0278 241.23)",
+          "oklch(35% 0.0278 241.23)",
+          "oklch(45% 0.0278 241.23)",
+          "oklch(60% 0.0278 241.23)",
+          "oklch(75% 0.0278 241.23)",
+          "oklch(85% 0.0278 241.23)",
+          "oklch(95% 0.0278 241.23)"
+        ]
+      },
+      "navigation-surface": {
+        "displayName": "Navigation Mist",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0195 240.74)",
+          "oklch(25% 0.0195 240.74)",
+          "oklch(35% 0.0195 240.74)",
+          "oklch(45% 0.0195 240.74)",
+          "oklch(60% 0.0195 240.74)",
+          "oklch(75% 0.0195 240.74)",
+          "oklch(85% 0.0195 240.74)",
+          "oklch(95% 0.0195 240.74)"
+        ]
+      },
+      "muted": {
+        "displayName": "Supporting Slate",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0511 245.00)",
+          "oklch(25% 0.0511 245.00)",
+          "oklch(35% 0.0511 245.00)",
+          "oklch(45% 0.0511 245.00)",
+          "oklch(60% 0.0511 245.00)",
+          "oklch(75% 0.0511 245.00)",
+          "oklch(85% 0.0511 245.00)",
+          "oklch(95% 0.0511 245.00)"
+        ]
+      },
+      "input-stroke": {
+        "displayName": "Field Slate",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0456 242.07)",
+          "oklch(25% 0.0456 242.07)",
+          "oklch(35% 0.0456 242.07)",
+          "oklch(45% 0.0456 242.07)",
+          "oklch(60% 0.0456 242.07)",
+          "oklch(75% 0.0456 242.07)",
+          "oklch(85% 0.0456 242.07)",
+          "oklch(95% 0.0456 242.07)"
+        ]
+      },
+      "link": {
+        "displayName": "Link Blue",
+        "role": "secondary",
+        "tonalRamp": [
+          "oklch(15% 0.0980 249.12)",
+          "oklch(25% 0.0980 249.12)",
+          "oklch(35% 0.0980 249.12)",
+          "oklch(45% 0.0980 249.12)",
+          "oklch(60% 0.0980 249.12)",
+          "oklch(75% 0.0980 249.12)",
+          "oklch(85% 0.0980 249.12)",
+          "oklch(95% 0.0980 249.12)"
+        ]
+      },
+      "pending": {
+        "displayName": "Pending Amber",
+        "role": "tertiary",
+        "tonalRamp": [
+          "oklch(15% 0.0982 77.06)",
+          "oklch(25% 0.0982 77.06)",
+          "oklch(35% 0.0982 77.06)",
+          "oklch(45% 0.0982 77.06)",
+          "oklch(60% 0.0982 77.06)",
+          "oklch(75% 0.0982 77.06)",
+          "oklch(85% 0.0982 77.06)",
+          "oklch(95% 0.0982 77.06)"
+        ]
+      },
+      "error": {
+        "displayName": "Error Red",
+        "role": "tertiary",
+        "tonalRamp": [
+          "oklch(15% 0.1458 27.85)",
+          "oklch(25% 0.1458 27.85)",
+          "oklch(35% 0.1458 27.85)",
+          "oklch(45% 0.1458 27.85)",
+          "oklch(60% 0.1458 27.85)",
+          "oklch(75% 0.1458 27.85)",
+          "oklch(85% 0.1458 27.85)",
+          "oklch(95% 0.1458 27.85)"
+        ]
+      },
+      "error-surface": {
+        "displayName": "Pale Error",
+        "role": "tertiary",
+        "tonalRamp": [
+          "oklch(15% 0.0165 26.65)",
+          "oklch(25% 0.0165 26.65)",
+          "oklch(35% 0.0165 26.65)",
+          "oklch(45% 0.0165 26.65)",
+          "oklch(60% 0.0165 26.65)",
+          "oklch(75% 0.0165 26.65)",
+          "oklch(85% 0.0165 26.65)",
+          "oklch(95% 0.0165 26.65)"
+        ]
+      },
+      "focus": {
+        "displayName": "Focus Amber",
+        "role": "tertiary",
+        "tonalRamp": [
+          "oklch(15% 0.1375 55.87)",
+          "oklch(25% 0.1375 55.87)",
+          "oklch(35% 0.1375 55.87)",
+          "oklch(45% 0.1375 55.87)",
+          "oklch(60% 0.1375 55.87)",
+          "oklch(75% 0.1375 55.87)",
+          "oklch(85% 0.1375 55.87)",
+          "oklch(95% 0.1375 55.87)"
+        ]
+      },
+      "selection-surface": {
+        "displayName": "Soft Selection Green",
+        "role": "tertiary",
+        "tonalRamp": [
+          "oklch(15% 0.0441 174.61)",
+          "oklch(25% 0.0441 174.61)",
+          "oklch(35% 0.0441 174.61)",
+          "oklch(45% 0.0441 174.61)",
+          "oklch(60% 0.0441 174.61)",
+          "oklch(75% 0.0441 174.61)",
+          "oklch(85% 0.0441 174.61)",
+          "oklch(95% 0.0441 174.61)"
+        ]
+      },
+      "selection-ink": {
+        "displayName": "Selection Ink",
+        "role": "tertiary",
+        "tonalRamp": [
+          "oklch(15% 0.0360 177.75)",
+          "oklch(25% 0.0360 177.75)",
+          "oklch(35% 0.0360 177.75)",
+          "oklch(45% 0.0360 177.75)",
+          "oklch(60% 0.0360 177.75)",
+          "oklch(75% 0.0360 177.75)",
+          "oklch(85% 0.0360 177.75)",
+          "oklch(95% 0.0360 177.75)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "primary-heading": {
+        "displayName": "Task heading",
+        "purpose": "Fixed inherited heading for worksheet, finding, publication, document or collection."
+      },
+      "section-heading": {
+        "displayName": "Section heading",
+        "purpose": "Coverage, full unsaved preview, refused save and saved report."
+      },
+      "brand": {
+        "displayName": "Cabinet brand",
+        "purpose": "Inherited heavier identity in the navy header."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "System text, authored RU/KK requirements, rationale and quotes."
+      },
+      "label": {
+        "displayName": "Control label",
+        "purpose": "Connected native labels and explicit actions."
+      },
+      "supporting": {
+        "displayName": "Supporting text",
+        "purpose": "Manual-meaning boundaries, helpers, table headings and footer."
+      },
+      "preformatted": {
+        "displayName": "Frozen source",
+        "purpose": "Browser-native preformatted face for full source and data/audit access."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "stacked-layout",
+        "value": "700px"
+      },
+      {
+        "name": "narrow-table-search",
+        "value": "600px"
+      }
+    ],
+    "documentationScope": {
+      "documentationMode": "scan of narrow inherited code-led Operate extension",
+      "inheritsFrom": [
+        "../koshi-map/DESIGN.md",
+        "../koshi-map/.impeccable/design.json"
+      ],
+      "inheritedCommit": "fd22ccc94556ee526b6f8eebde518c09b972e377",
+      "sourceFiles": [
+        "public/app.js",
+        "public/styles.css",
+        "public/index.html"
+      ],
+      "productTruth": "PRODUCT.md",
+      "surfaceBrief": ".impeccable/surfaces/public-app-js.md",
+      "review": "docs/finish-review.json",
+      "provenance": "docs/capture-provenance.json",
+      "captureCount": 7,
+      "actualReviewedWidth": 1280,
+      "reviewDisposition": "ship",
+      "materialFixes": 0,
+      "captures": [
+        {
+          "file": "docs/complete-1280.jpg",
+          "source": ".impeccable/review/complete-1280.jpg",
+          "sha256": "2e097941a16e92e09355230a6440d85c44fb2ce94136255265a2fbad530d70a0",
+          "width": 1280,
+          "height": 1595,
+          "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS"
+        },
+        {
+          "file": "docs/preview-1280.jpg",
+          "source": ".impeccable/review/preview-1280.jpg",
+          "sha256": "802106314a7f9ef64b9e0e12c88e5a63b69ff1f0b3fe72fc65e211b7c103d729",
+          "width": 1280,
+          "height": 2622,
+          "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS"
+        },
+        {
+          "file": "docs/report-1280.jpg",
+          "source": ".impeccable/review/report-1280.jpg",
+          "sha256": "0d7bd5db0b46268f2856da1ef00cf2396d02428f6eeb8799a37c8b097b432394",
+          "width": 1280,
+          "height": 1653,
+          "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS"
+        },
+        {
+          "file": "docs/finding-form-1280.jpg",
+          "source": ".impeccable/review/finding-form-1280.jpg",
+          "sha256": "31dd5d1a23b51f9766c1bb7d9f112bd7743b095ac59612a0211056d52303a5b2",
+          "width": 1280,
+          "height": 1523,
+          "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS"
+        },
+        {
+          "file": "docs/missing-preview-1280.jpg",
+          "source": ".impeccable/review/missing-preview-1280.jpg",
+          "sha256": "5f471c263764a6d78fb61c91c9b58b831ba22de205fe36235f0f2db2c5398359",
+          "width": 1280,
+          "height": 2498,
+          "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS"
+        },
+        {
+          "file": "docs/source-open-1280.jpg",
+          "source": ".impeccable/review/source-open-1280.jpg",
+          "sha256": "cbee1290067941f2fecbff0a34d2be6f07569184a20c0d55b60edc841757a2cf",
+          "width": 1280,
+          "height": 2149,
+          "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS"
+        },
+        {
+          "file": "docs/stale-refusal-1280.jpg",
+          "source": ".impeccable/review/stale-refusal-1280.jpg",
+          "sha256": "31e19afab40b10ba684a9fa69f1c351b61f904f9608fb86190c808625ef9491b",
+          "width": 1280,
+          "height": 2691,
+          "origin": "Unedited full-page local IAB screenshot;synthetic runtime127.0.0.1:8855,actual1280CSS"
+        }
+      ],
+      "captureValidation": "All seven docs/source JPEG pairs were opened and byte-hash matched to provenance. Full-page raster dimensions independently checked. No pixel editing.",
+      "freshness": "Authentic earlier synthetic workflow states; not a claim about current database contents or reopened immutable reports.",
+      "contextRerun": true,
+      "detectorRerun": false,
+      "browserOrInteractionChecksRerun": false,
+      "backendTestsRerun": false,
+      "snippetBehavior": "Ten static self-contained synthetic examples with non-submitting action buttons and no application handlers. Native fields and disclosures retain ordinary browser behavior. Compact report excerpts omit other rows; production renders all findings.",
+      "colorRampProvenance": "Inherited derived OKLCH inspection strips for the identical palette, not additional implemented interface colors.",
+      "limits": [
+        "Named sources and seven actual1280 desktop states only.",
+        "Mobile/390px, 1440px, touch, screen-reader and exhaustive keyboard behavior unverified.",
+        "Empty/overlong/hover/loading and every role/archive state unverified.",
+        "No backend, concurrency, isolation, restore authenticity, transport or security certification.",
+        "No real-document, legal, integration or customer-outcome claim."
+      ],
+      "productBoundary": "Synthetic text only; shared staff area without tenant isolation. Exact containment is not truth, sufficiency, absence or actual contradiction. No live Gumloop, AI/LLM, OCR, document-upload extraction, external messages or payments."
+    },
+    "sourceEvidence": {
+      "palette": "public/styles.css:1-15",
+      "shell": "public/styles.css:26-62 and 417",
+      "type": "public/styles.css:63-77",
+      "fieldsPanelsButtons": "public/styles.css:84-143 and 377-393",
+      "selectionFocusDisclosure": "public/styles.css:225-250",
+      "responsiveTables": "public/styles.css:258-375",
+      "quotes": "public/styles.css:416; public/app.js:32",
+      "language": "public/app.js:4,25,28,31-39",
+      "publication": "public/app.js:28-30",
+      "worksheetSnapshots": "public/app.js:34",
+      "reportState": "public/app.js:33-36",
+      "crlfSelectionAndForm": "public/app.js:37-39",
+      "shellSemantics": "public/index.html:10-21; public/app.js:11-12"
+    }
+  },
+  "components": [
+    {
+      "name": "Explicit Primary Action",
+      "kind": "button",
+      "description": "Green explicit action; static and non-submitting.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Проверить полноту отчёта</button>",
+      "css": ".ds-primary { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:inline-block; min-height:44px; padding:.65rem 1rem; cursor:pointer; background:var(--teal,#126653); border:1px solid var(--teal,#126653); border-radius:7px; color:#fff; font-weight:600; } .ds-primary:hover { filter:brightness(1.13); background:#0b5343; } .ds-primary:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-primary:disabled { cursor:not-allowed; opacity:.55; }",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Secondary Action",
+      "kind": "button",
+      "description": "White/navy refresh, return and selection-transfer action.",
+      "html": "<button class=\"ds-secondary\" type=\"button\">Обновить проверку</button>",
+      "css": ".ds-secondary { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:inline-block; min-height:44px; padding:.65rem 1rem; cursor:pointer; background:#fff; border:1px solid var(--navy,#183e60); border-radius:7px; color:var(--navy,#183e60); font-weight:600; } .ds-secondary:hover { filter:brightness(1.13); } .ds-secondary:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-secondary:disabled { cursor:not-allowed; opacity:.55; }",
+      "refersTo": "button-secondary"
+    },
+    {
+      "name": "Cabinet Navigation",
+      "kind": "nav",
+      "description": "Native wrapped collection buttons; current page remains explicit.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Разделы\"><button type=\"button\">Тексты</button><button type=\"button\" aria-current=\"page\">Проверки</button><button type=\"button\">Отчёты</button></nav>",
+      "css": ".ds-nav { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:flex; flex-wrap:wrap; gap:.5rem; padding:.7rem 1.25rem; background:#dce9f3; border-bottom:1px solid var(--line,#b9cbd9); } .ds-nav button { font:inherit; min-height:44px; padding:.65rem 1rem; border:1px solid transparent; border-radius:7px; background:transparent; color:var(--navy,#183e60); font-weight:600; cursor:pointer; } .ds-nav [aria-current=\"page\"] { background:#fff; border-color:var(--line,#b9cbd9); } .ds-nav button:hover { filter:brightness(1.13); } .ds-nav button:focus-visible { outline:3px solid #bd671a; outline-offset:3px; }",
+      "refersTo": "navigation-current"
+    },
+    {
+      "name": "Native Record Table",
+      "kind": "card",
+      "description": "Focusable scrolling wrapper and scoped native column headings.",
+      "html": "<div class=\"ds-table\" tabindex=\"0\" aria-label=\"Таблица записей; горизонтальная прокрутка.\"><table><thead><tr><th scope=\"col\">Запись</th><th scope=\"col\">Автор / RU</th><th scope=\"col\">Состояние / KK</th><th scope=\"col\">Контекст</th><th scope=\"col\">Действие</th></tr></thead><tbody><tr><td>SYN: записка</td><td>alpha</td><td>Отчёт сохранён</td><td>SYN_NOTE · v3</td><td><button class=\"ds-open\" type=\"button\">Открыть</button></td></tr></tbody></table></div>",
+      "css": ".ds-table { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; color:#172e45; overflow:auto; margin-top:1rem; border:1px solid var(--line,#b9cbd9); border-radius:12px; background:#fff; } .ds-table table { border-collapse:collapse; width:100%; font-variant-numeric:tabular-nums; } .ds-table th,.ds-table td { text-align:left; padding:.9rem; vertical-align:top; border-bottom:1px solid var(--line,#b9cbd9); overflow-wrap:anywhere; max-width:28ch; } .ds-table th { background:#dce9f3; font-size:.9rem; } .ds-table tr:last-child td { border-bottom:0; } .ds-table:focus-visible { outline:3px solid #bd671a; outline-offset:3px; }.ds-open { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:inline-block; min-height:44px; padding:.65rem 1rem; cursor:pointer; background:#fff; border:1px solid var(--navy,#183e60); border-radius:7px; color:var(--navy,#183e60); font-weight:600; } .ds-open:hover { filter:brightness(1.13); } .ds-open:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-open:disabled { cursor:not-allowed; opacity:.55; }",
+      "refersTo": "record-table"
+    },
+    {
+      "name": "Immutable Source Disclosure",
+      "kind": "custom",
+      "description": "Full source remains separate from the frozen bilingual requirement list.",
+      "html": "<section class=\"ds-disclosure\"><details open><summary>Полный неизменный текст</summary><pre lang=\"kk\">SYN😀\nМақсат: оқу картасының үлгісі.\nМерзім: 2026-11-12.</pre></details><details><summary>Точный опубликованный список</summary><h2>SYN_NOTE · v3</h2><ol><li><strong>DATE</strong><p lang=\"ru\">Указан один согласованный срок.</p><p lang=\"kk\">Бір келісілген мерзім көрсетілген.</p></li></ol></details></section>",
+      "css": ".ds-disclosure { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; color:#172e45; } .ds-disclosure p { max-width:72ch; line-height:1.6; margin:.5rem 0 1rem; overflow-wrap:anywhere; } .ds-disclosure h2 { font-size:1.3rem; margin:2rem 0 .75rem; overflow-wrap:anywhere; } .ds-disclosure h3 { overflow-wrap:anywhere; } .ds-disclosure blockquote { margin:.7rem 0 1rem; padding:.7rem 1rem; border:1px solid var(--line,#b9cbd9); background:#fff; overflow-wrap:anywhere; white-space:pre-wrap; } .ds-disclosure .ds-muted { color:#46627a; font-size:.9rem; }.ds-disclosure details { margin-top:1rem; overflow-wrap:anywhere; } .ds-disclosure summary { cursor:pointer; min-height:44px; display:list-item; padding:.7rem 0; } .ds-disclosure summary:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-disclosure pre { white-space:pre-wrap; overflow-wrap:anywhere; font-size:.85rem; } .ds-disclosure ol { padding-left:1.5rem; }",
+      "refersTo": "snapshot-disclosure"
+    },
+    {
+      "name": "Native Source Selection Form",
+      "kind": "input",
+      "description": "The source stays selectable and read-only; transfer controls are static documentation without handlers.",
+      "html": "<section class=\"ds-selection\"><p lang=\"ru\">Указан один согласованный срок.</p><p lang=\"kk\">Бір келісілген мерзім көрсетілген.</p><p class=\"ds-muted\">Позиции с 0: UTF-16, начало включено, конец исключён. Цитату извлечёт сервер.</p><section class=\"ds-selection-panel\"><label for=\"ds-source\">Неизменный текст для выделения</label><textarea id=\"ds-source\" lang=\"kk\" rows=\"8\" readonly>SYN😀\nМақсат: оқу картасының үлгісі.\nМерзім: 2026-11-12.</textarea><label for=\"ds-verdict\">Ручная отметка</label><select id=\"ds-verdict\"><option selected>Опора в тексте</option><option>Не найдено</option><option>Конфликт двух цитат</option></select><label for=\"ds-start\">Начало первой цитаты</label><input id=\"ds-start\" inputmode=\"numeric\" value=\"47\"><label for=\"ds-end\">Конец первой цитаты</label><input id=\"ds-end\" inputmode=\"numeric\" value=\"57\"><label for=\"ds-second-start\">Начало второй цитаты</label><input id=\"ds-second-start\" inputmode=\"numeric\"><label for=\"ds-second-end\">Конец второй цитаты</label><input id=\"ds-second-end\" inputmode=\"numeric\"><button class=\"ds-transfer\" type=\"button\">Взять выделение как первую цитату</button><button class=\"ds-transfer\" type=\"button\">Взять выделение как вторую цитату</button><button class=\"ds-transfer\" type=\"button\">Очистить границы цитат</button><label for=\"ds-finding-note\">Основание отметки</label><textarea id=\"ds-finding-note\" lang=\"kk\" required>SYN: мерзім мәтінде бар.</textarea><button class=\"ds-finding-save\" type=\"button\">Сохранить отметку</button></section></section>",
+      "css": ".ds-selection { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; color:#172e45; } .ds-selection p { max-width:72ch; line-height:1.6; margin:.5rem 0 1rem; overflow-wrap:anywhere; } .ds-selection h2 { font-size:1.3rem; margin:2rem 0 .75rem; overflow-wrap:anywhere; } .ds-selection h3 { overflow-wrap:anywhere; } .ds-selection blockquote { margin:.7rem 0 1rem; padding:.7rem 1rem; border:1px solid var(--line,#b9cbd9); background:#fff; overflow-wrap:anywhere; white-space:pre-wrap; } .ds-selection .ds-muted { color:#46627a; font-size:.9rem; }.ds-selection-panel { background:#fff; border:1px solid var(--line,#b9cbd9); border-radius:12px; padding:1.4rem; } .ds-selection-panel label { display:block; font-weight:600; margin:1rem 0 .35rem; } .ds-selection-panel label:first-child { margin-top:0; } .ds-selection-panel input, .ds-selection-panel textarea, .ds-selection-panel select { font:inherit; width:100%; padding:.7rem; border:1px solid #7894aa; border-radius:7px; background:#fff; color:inherit; caret-color:#174e7e; } .ds-selection-panel textarea { min-height:100px; resize:vertical; } .ds-selection-panel input:focus-visible, .ds-selection-panel textarea:focus-visible, .ds-selection-panel select:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-selection-panel textarea::selection { background:#b7ded2; color:#132f29; }.ds-transfer { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:inline-block; min-height:44px; padding:.65rem 1rem; cursor:pointer; background:#fff; border:1px solid var(--navy,#183e60); border-radius:7px; color:var(--navy,#183e60); font-weight:600; } .ds-transfer:hover { filter:brightness(1.13); } .ds-transfer:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-transfer:disabled { cursor:not-allowed; opacity:.55; }.ds-finding-save { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:inline-block; min-height:44px; padding:.65rem 1rem; cursor:pointer; background:var(--teal,#126653); border:1px solid var(--teal,#126653); border-radius:7px; color:#fff; font-weight:600; } .ds-finding-save:hover { filter:brightness(1.13); background:#0b5343; } .ds-finding-save:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-finding-save:disabled { cursor:not-allowed; opacity:.55; }",
+      "refersTo": "field"
+    },
+    {
+      "name": "Manual Finding States",
+      "kind": "custom",
+      "refersTo": "exact-quote",
+      "description": "Supported uses one exact quote, missing uses none, conflicting uses two ordered disjoint spans; all decisions remain manual.",
+      "html": "<section class=\"ds-finding-states\"><section class=\"ds-supported\"><h3>DATE · Опора в тексте</h3><p lang=\"kk\">SYN: мерзім мәтінде бар.</p><p>Позиции [47, 57) · точная цитата</p><blockquote lang=\"kk\">2026-11-12</blockquote></section><section class=\"ds-missing\"><h3>DATE · Не найдено</h3><p lang=\"kk\">SYN: уақытша қолмен «табылмады» белгісі.</p><p class=\"ds-muted\">«Не найдено» — ручная отметка автора, не автоматическое доказательство отсутствия.</p></section><section class=\"ds-conflict\"><h3>DATE · Конфликт двух цитат</h3><p lang=\"ru\">SYN: человек отметил разные даты как конфликт для этого требования; сервис не оценивает смысл.</p><p>Позиции [66, 76) · точная цитата</p><blockquote lang=\"ru\">2026-11-01</blockquote><p>Позиции [99, 109) · точная цитата</p><blockquote lang=\"ru\">2026-11-09</blockquote></section></section>",
+      "css": ".ds-finding-states { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; color:#172e45; } .ds-finding-states p { max-width:72ch; line-height:1.6; margin:.5rem 0 1rem; overflow-wrap:anywhere; } .ds-finding-states h2 { font-size:1.3rem; margin:2rem 0 .75rem; overflow-wrap:anywhere; } .ds-finding-states h3 { overflow-wrap:anywhere; } .ds-finding-states blockquote { margin:.7rem 0 1rem; padding:.7rem 1rem; border:1px solid var(--line,#b9cbd9); background:#fff; overflow-wrap:anywhere; white-space:pre-wrap; } .ds-finding-states .ds-muted { color:#46627a; font-size:.9rem; }"
+    },
+    {
+      "name": "Unsaved Full Preview and Closure",
+      "kind": "custom",
+      "description": "Compact excerpt of an unsaved preview; production renders every finding before its closure form.",
+      "html": "<section class=\"ds-preview\"><h2>Полный предпросмотр · ещё не записан</h2><p class=\"ds-preview-status\">complete · все требования вручную отмечены как имеющие опору</p><p>Опор 2 · не найдено 0 · конфликтов 0</p><p class=\"ds-muted\">Это полнота ручных отметок. Смысл, правдивость, достаточность и юридическая пригодность не проверяются.</p><section class=\"ds-preview-finding\"><p lang=\"ru\">Указан один согласованный срок.</p><p lang=\"kk\">Бір келісілген мерзім көрсетілген.</p><h3>DATE · Опора в тексте</h3><p lang=\"kk\">SYN: мерзім мәтінде бар.</p><p>Позиции [47, 57) · точная цитата</p><blockquote lang=\"kk\">2026-11-12</blockquote></section><section class=\"ds-closure-panel\"><label for=\"ds-closure-note\">Основание закрытия</label><textarea id=\"ds-closure-note\" lang=\"kk\" required>SYN: екі талапқа қолмен тірек белгіленді. Дұрыстық кепілі емес.</textarea><button class=\"ds-closure-save\" type=\"button\">Записать полный отчёт один раз</button></section></section>",
+      "css": ".ds-preview { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; color:#172e45; } .ds-preview p { max-width:72ch; line-height:1.6; margin:.5rem 0 1rem; overflow-wrap:anywhere; } .ds-preview h2 { font-size:1.3rem; margin:2rem 0 .75rem; overflow-wrap:anywhere; } .ds-preview h3 { overflow-wrap:anywhere; } .ds-preview blockquote { margin:.7rem 0 1rem; padding:.7rem 1rem; border:1px solid var(--line,#b9cbd9); background:#fff; overflow-wrap:anywhere; white-space:pre-wrap; } .ds-preview .ds-muted { color:#46627a; font-size:.9rem; }.ds-preview-status { font-weight:650; color:var(--teal,#126653); } .ds-preview-finding { padding:1rem 0; border-bottom:1px solid var(--line,#b9cbd9); }.ds-closure-panel { background:#fff; border:1px solid var(--line,#b9cbd9); border-radius:12px; padding:1.4rem; } .ds-closure-panel label { display:block; font-weight:600; margin:1rem 0 .35rem; } .ds-closure-panel label:first-child { margin-top:0; } .ds-closure-panel input, .ds-closure-panel textarea, .ds-closure-panel select { font:inherit; width:100%; padding:.7rem; border:1px solid #7894aa; border-radius:7px; background:#fff; color:inherit; caret-color:#174e7e; } .ds-closure-panel textarea { min-height:100px; resize:vertical; } .ds-closure-panel input:focus-visible, .ds-closure-panel textarea:focus-visible, .ds-closure-panel select:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-closure-panel textarea::selection { background:#b7ded2; color:#132f29; }.ds-closure-save { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:inline-block; min-height:44px; padding:.65rem 1rem; cursor:pointer; background:var(--teal,#126653); border:1px solid var(--teal,#126653); border-radius:7px; color:#fff; font-weight:600; } .ds-closure-save:hover { filter:brightness(1.13); background:#0b5343; } .ds-closure-save:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-closure-save:disabled { cursor:not-allowed; opacity:.55; }",
+      "refersTo": "panel"
+    },
+    {
+      "name": "Stale Refusal with Retained Rationale",
+      "kind": "custom",
+      "description": "Refusal heading and focused notice; rationale remains unsaved. Finding rows omitted in this compact static excerpt.",
+      "html": "<section class=\"ds-stale\"><div class=\"ds-stale-notice\" role=\"status\" aria-live=\"polite\" tabindex=\"-1\">Данные изменились в другой вкладке. Обновите экран перед сохранением.</div><h2>Запись отказала · обновите и перепроверьте</h2><p class=\"ds-stale-status\">complete · все требования вручную отмечены как имеющие опору</p><p>Опор 2 · не найдено 0 · конфликтов 0</p><p class=\"ds-muted\">Это полнота ручных отметок. Смысл, правдивость, достаточность и юридическая пригодность не проверяются.</p><section class=\"ds-stale-closure-panel\"><label for=\"ds-stale-closure-note\">Основание закрытия</label><textarea id=\"ds-stale-closure-note\" lang=\"kk\" required>SYN: екі талапқа қолмен тірек белгіленді. Дұрыстық кепілі емес.</textarea><button class=\"ds-stale-closure-save\" type=\"button\">Записать полный отчёт один раз</button></section></section>",
+      "css": ".ds-stale { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; color:#172e45; } .ds-stale p { max-width:72ch; line-height:1.6; margin:.5rem 0 1rem; overflow-wrap:anywhere; } .ds-stale h2 { font-size:1.3rem; margin:2rem 0 .75rem; overflow-wrap:anywhere; } .ds-stale h3 { overflow-wrap:anywhere; } .ds-stale blockquote { margin:.7rem 0 1rem; padding:.7rem 1rem; border:1px solid var(--line,#b9cbd9); background:#fff; overflow-wrap:anywhere; white-space:pre-wrap; } .ds-stale .ds-muted { color:#46627a; font-size:.9rem; }.ds-stale-notice { color:#942721; background:#fff0ee; border:1px solid var(--line,#b9cbd9); padding:1rem; border-radius:7px; margin-bottom:1rem; } .ds-stale-notice:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-stale-status { font-weight:650; color:var(--teal,#126653); }.ds-stale-closure-panel { background:#fff; border:1px solid var(--line,#b9cbd9); border-radius:12px; padding:1.4rem; } .ds-stale-closure-panel label { display:block; font-weight:600; margin:1rem 0 .35rem; } .ds-stale-closure-panel label:first-child { margin-top:0; } .ds-stale-closure-panel input, .ds-stale-closure-panel textarea, .ds-stale-closure-panel select { font:inherit; width:100%; padding:.7rem; border:1px solid #7894aa; border-radius:7px; background:#fff; color:inherit; caret-color:#174e7e; } .ds-stale-closure-panel textarea { min-height:100px; resize:vertical; } .ds-stale-closure-panel input:focus-visible, .ds-stale-closure-panel textarea:focus-visible, .ds-stale-closure-panel select:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-stale-closure-panel textarea::selection { background:#b7ded2; color:#132f29; }.ds-stale-closure-save { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; display:inline-block; min-height:44px; padding:.65rem 1rem; cursor:pointer; background:var(--teal,#126653); border:1px solid var(--teal,#126653); border-radius:7px; color:#fff; font-weight:600; } .ds-stale-closure-save:hover { filter:brightness(1.13); background:#0b5343; } .ds-stale-closure-save:focus-visible { outline:3px solid #bd671a; outline-offset:3px; } .ds-stale-closure-save:disabled { cursor:not-allowed; opacity:.55; }",
+      "refersTo": "error-notice"
+    },
+    {
+      "name": "Historical Saved Report",
+      "kind": "custom",
+      "description": "Saved synthetic historical excerpt has actor/time/digest and no edit or seal controls.",
+      "html": "<section class=\"ds-saved\"><p>Автор отчёта alpha · 2026-10-25T19:30:47.807Z</p><p lang=\"ru\">SYN: после refresh явно сохраняю полный needs_evidence по двум датам.</p><p>SHA256: 4923f6958283118c7d072065e5af1f101e42a15365a98b89ff08186db26d4478</p><h2>Сохранённый полный отчёт</h2><p class=\"ds-saved-status\">needs_evidence · есть отметки «Не найдено» или «Конфликт»</p><p>Опор 1 · не найдено 0 · конфликтов 1</p><p class=\"ds-muted\">Это полнота ручных отметок. Смысл, правдивость, достаточность и юридическая пригодность не проверяются.</p><h3>DATE · Конфликт двух цитат</h3><p lang=\"ru\">SYN: человек отметил разные даты; сервис не оценивает смысл.</p><p>Позиции [66, 76) · точная цитата</p><blockquote lang=\"ru\">2026-11-01</blockquote><p>Позиции [99, 109) · точная цитата</p><blockquote lang=\"ru\">2026-11-09</blockquote></section>",
+      "css": ".ds-saved { font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif; color:#172e45; } .ds-saved p { max-width:72ch; line-height:1.6; margin:.5rem 0 1rem; overflow-wrap:anywhere; } .ds-saved h2 { font-size:1.3rem; margin:2rem 0 .75rem; overflow-wrap:anywhere; } .ds-saved h3 { overflow-wrap:anywhere; } .ds-saved blockquote { margin:.7rem 0 1rem; padding:.7rem 1rem; border:1px solid var(--line,#b9cbd9); background:#fff; overflow-wrap:anywhere; white-space:pre-wrap; } .ds-saved .ds-muted { color:#46627a; font-size:.9rem; }.ds-saved-status { font-weight:650; color:var(--teal,#126653); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Shared Work Cabinet",
+    "overview": "DalelCheck extends its own KoshiMap/BekitChange Shared Work Cabinet: navy identity and navigation, a pale blue workspace, white labelled native forms, green explicit actions and system typography. This is a narrow inherited extension; its authority is the [KoshiMap design system](../koshi-map/DESIGN.md) and [sidecar](../koshi-map/.impeccable/design.json), pinned to own-source commit `fd22ccc94556ee526b6f8eebde518c09b972e377`. No new visual world or image comp is introduced.\n\nIts character is flat, direct and readable. A frozen synthetic source and ordered bilingual requirements remain available beside manually authored findings. Exact quoted spans, written state labels and an explicit whole-report action carry the work. A saved report is historical evidence of those manual entries, with actor, time and digest; it is not an automatic judgement of meaning or truth.",
+    "keyCharacteristics": [
+      "Inherited navy shell, cool workspace and flat white controls.",
+      "System typography, visible labels and native selection, tables and disclosures.",
+      "Exact source text, bilingual requirements and coordinate-labelled quote blocks.",
+      "Manual supported, missing and conflicting findings expressed in words.",
+      "Unsaved preview, refused save and immutable saved report kept visibly distinct."
+    ],
+    "rules": [
+      {
+        "name": "The Inherited Shell Rule",
+        "body": "Extend the existing Shared Work Cabinet palette, typography and native navigation grammar.",
+        "section": "colors"
+      },
+      {
+        "name": "The Authored Evidence Rule",
+        "body": "Preserve authored RU/KK text, language nodes and source line breaks; exact containment does not establish meaning or truth.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quote Boundary Rule",
+        "body": "Keep the full immutable source separate from exact quoted spans and their zero-based UTF-16 coordinates.",
+        "section": "components"
+      },
+      {
+        "name": "The Manual Finding Rule",
+        "body": "Write supported, missing and conflicting findings explicitly; status color and exact quotes do not supply a semantic verdict.",
+        "section": "components"
+      },
+      {
+        "name": "The Saved State Rule",
+        "body": "Call a preview unsaved, retain rationale on refusal and show a saved report only with its historical actor, time and digest.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do retain the inherited navy shell, pale ground, white native controls and green explicit actions.",
+      "Do keep connected field labels, visible focus, native disclosure markers and column-scoped table headers.",
+      "Do preserve authored RU/KK text, language attributes, exact quotes and source line breaks.",
+      "Do show worksheet owner, document language, publication version and coverage before the findings.",
+      "Do keep full source and exact published requirements in separate native disclosures.",
+      "Do distinguish an unfilled finding, a manually missing finding and a conflicting two-quote finding.",
+      "Do place the one-time report action after the complete preview and required closure rationale.",
+      "Do retain unsaved rationale and change the preview heading when a write is refused.",
+      "Do replace editing and save controls with historical actor, time, digest and frozen findings after saving.",
+      "Do let long titles, digests, source text and quotes wrap without a fixed-height crop."
+    ],
+    "donts": [
+      "Don't replace this inherited identity with ornamental media, display lettering or animation.",
+      "Don't replace native selection, inputs, tables or disclosures with decorative imitations.",
+      "Don't present complete, needs_evidence or an exact quote as a semantic, truth, sufficiency or legal verdict.",
+      "Don't present a preview or a retained unsaved rationale as a saved report.",
+      "Don't provide a non-author or administrator bypass for editing findings or sealing the report.",
+      "Don't offer report edit, reopen, reversal or a second seal action after saving.",
+      "Don't imply tenant isolation, live Gumloop, AI, OCR, file extraction, external messaging or real-document outcomes.",
+      "Don't describe a digest or this bounded visual packet as authentication or security certification.",
+      "Don't claim mobile/390px, 1440px, touch, screen-reader or exhaustive keyboard verification from the seven 1280px captures."
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "dalel-check",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Ручная сверка синтетического текста по опубликованным требованиям с точными цитатами и неизменным полным отчётом.",
+  "engines": {
+    "node": ">=24.15 <25"
+  },
+  "scripts": {
+    "start": "node start.js",
+    "test": "node --test --test-reporter=tap tests/*.test.js"
+  }
+}
