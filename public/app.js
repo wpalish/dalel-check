@@ -8,7 +8,7 @@ const authored=(tag,text,lang,cls)=>{const e=E(tag,text,cls);e.lang=lang==='kk'?
 function say(text,error=false){notice.textContent=text;notice.className=error?'error':'';if(error)notice.focus();}
 async function run(fn,b){say('');if(b){b.disabled=true;b.setAttribute('aria-busy','true');}try{await fn();}catch(e){say(e.message,true);}finally{if(b){b.disabled=false;b.removeAttribute('aria-busy');}}}
 const B=(label,fn,cls='secondary')=>{const b=E('button',label,cls);b.type='button';b.onclick=()=>run(fn,b);return b;};
-async function api(path,method='GET',data){const r=await fetch(path,{method,headers:{...(data?{'Content-Type':'application/json'}:{}),...(user?{'X-CSRF-Token':user.csrf}:{})},...(data?{body:JSON.stringify(data)}:{})});const x=await r.json();if(!r.ok)throw Error(x.error||'Не удалось выполнить запрос.');return x;}
+async function api(path,method='GET',data){const r=await fetch(path,{method,headers:{...(data?{'Content-Type':'application/json'}:{}),...(user?{'X-CSRF-Token':user.csrf}:{})},...(data?{body:JSON.stringify(data)}:{})});const x=await r.json();if(!r.ok){if(r.status===401&&path!=='/api/login'){user=null;state=null;login();}throw Error(x.error||'Не удалось выполнить запрос.');}return x;}
 function field(form,label,key,value='',type='text',required=true){const l=E('label',label),e=E(type==='textarea'?'textarea':'input');e.id='f-'+ ++n;l.htmlFor=e.id;e.name=key;if(type!=='textarea')e.type=type;e.value=value;e.required=required;form.append(l,e);return e;}
 function select(form,label,key,value,options,required=true){const l=E('label',label),e=E('select');e.id='f-'+ ++n;l.htmlFor=e.id;e.name=key;e.required=required;e.append(new Option('Выберите значение',''));for(const o of options)e.append(new Option(o.label,o.value));e.value=value;form.append(l,e);return e;}
 function focusTitle(){const h=screen.querySelector('h1');if(h){h.tabIndex=-1;h.focus();}}
@@ -83,7 +83,70 @@ function workDetail(w){
 function sourceOffset(body,n){let raw=0,dom=0;while(dom<n&&raw<body.length){if(body[raw]==='\r'&&body[raw+1]==='\n')raw+=2;else raw++;dom++;}return raw;}
 function findingForm(w,code,row){chrome();const revision=state.revision,locked=user.name!==w.owner||w.archived||state.data.reports.some(r=>r.worksheet===w.id),req=w.checklistSnapshot.requirements.find(r=>r.code===code);screen.replaceChildren(E('h1','Отметка: '+code),authored('p',req.textRu,'ru'),authored('p',req.textKk,'kk'),E('p','Выделите непрерывный фрагмент в сохранённом тексте и перенесите границы кнопкой. Позиции с 0: UTF-16, начало включено, конец исключён. Цитату извлечёт сервер.','muted'));const f=E('form',undefined,'panel'),source=field(f,'Неизменный текст для выделения','source',w.documentSnapshot.body,'textarea',false);source.readOnly=true;source.lang=w.documentSnapshot.language;source.rows=8;source.removeAttribute('name');select(f,'Ручная отметка','verdict',row?.verdict||'supported',Object.entries(verdicts).map(([value,label])=>({value,label})));const inputs={};for(const [k,label] of [['start','Начало первой цитаты'],['end','Конец первой цитаты'],['secondStart','Начало второй цитаты'],['secondEnd','Конец второй цитаты']]){inputs[k]=field(f,label,k,row?.[k]||'','text',false);inputs[k].inputMode='numeric';}const selected=(a,b)=>{inputs[a].value=sourceOffset(w.documentSnapshot.body,source.selectionStart);inputs[b].value=sourceOffset(w.documentSnapshot.body,source.selectionEnd);say('Границы перенесены. Выберите отметку и укажите основание.');};f.append(B('Взять выделение как первую цитату',()=>selected('start','end')),B('Взять выделение как вторую цитату',()=>selected('secondStart','secondEnd')),B('Очистить границы цитат',()=>{Object.values(inputs).forEach(x=>x.value='');}));field(f,'Основание отметки','note',row?.note||'','textarea').lang=w.documentSnapshot.language;if(!locked){const b=E('button','Сохранить отметку');b.type='submit';f.append(b);f.onsubmit=e=>{e.preventDefault();run(async()=>{state=await api('/api/command','POST',{collection:'findings',operation:'save',id:row?.id,revision,data:{...Object.fromEntries(new FormData(f)),worksheet:w.id,requirementCode:code}});workDetail(by('worksheets',w.id));say('Отметка и точные цитаты сохранены. Полный отчёт ещё не записан.');},b);};}else{for(const e of f.querySelectorAll('input,select,button,textarea:not([readonly])'))e.disabled=true;screen.append(E('p','Только чтение: авторство, архив или уже сохранённый отчёт.'));}screen.append(f,B('Вернуться к проверке',()=>workDetail(w)));focusTitle();}
 function download(data){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=E('a');a.href=url;a.download='dalel-check-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-function settings(){chrome();screen.replaceChildren(E('h1','Данные и доступ'),B('Вернуться',list));if(user.role!=='admin'){screen.append(E('p','Аккаунты, копии и журнал доступны администратору.'));return;}screen.append(E('h2','Аккаунты'),E('p','Общая область всех сотрудников. Интерфейса сброса паролей или отзыва сессий нет.','muted'));const f=E('form',undefined,'panel');field(f,'Имя нового аккаунта','username');field(f,'Пароль нового аккаунта','password','','password').autocomplete='new-password';select(f,'Роль','role','operator',[{value:'operator',label:'Сотрудник'},{value:'admin',label:'Администратор'}]);const b=E('button','Создать аккаунт');b.type='submit';f.append(b);f.onsubmit=e=>{e.preventDefault();run(async()=>{await api('/api/users','POST',Object.fromEntries(new FormData(f)));f.reset();say('Аккаунт создан.');},b);};screen.append(f,E('h2','Копии и журнал'),B('Скачать копию данных',async()=>download(await api('/api/backup'))),B('Показать журнал',async()=>{const x=await api('/api/audit'),d=E('details');d.open=true;d.append(E('summary','Последние события'),E('pre',JSON.stringify(x.events,null,2)));screen.append(d);}));const upload=field(screen,'Восстановить JSON в пустую базу','backup','','file',false);upload.accept='.json,application/json';upload.onchange=()=>run(async()=>{if(!upload.files[0])return;const copy=JSON.parse(await upload.files[0].text()),p=E('section',undefined,'panel');p.append(E('h3','Восстановление в пустую базу'),E('p','Продукт: '+copy.product+'. JSON не подписан, аккаунты и аудит не входят. Существующая область не заменяется.'),B('Подтвердить восстановление',async()=>{state=await api('/api/restore','POST',copy);list();say('Копия восстановлена.');},'primary'));screen.append(p);});focusTitle();}
+function accountSessions(report) {
+  const panel = E('section', undefined, 'panel account-sessions'),
+    header = E('div', undefined, 'account-session-heading'),
+    refreshButton = E('button', 'Обновить сеансы', 'secondary'),
+    status = E('p', 'Загрузка аккаунтов и сеансов…', 'muted account-session-status'),
+    list = E('div', undefined, 'account-session-list');
+  refreshButton.type = 'button';
+  status.setAttribute('role', 'status');
+  status.setAttribute('aria-live', 'polite');
+  header.append(E('h2', 'Аккаунты и сеансы'), refreshButton);
+  panel.append(header, E('p', 'Отзыв завершает вход в браузерах выбранного аккаунта. Для вашего аккаунта текущий сеанс всегда сохраняется. Пароли и роли здесь не меняются.', 'muted'), status, list);
+  screen.append(panel);
+  let requestNumber = 0;
+  const stamp = value => new Date(value).toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
+  async function refresh() {
+    const current = ++requestNumber;
+    status.textContent = 'Обновление сведений о сеансах…';
+    try {
+      const result = await api('/api/accounts');
+      if (current !== requestNumber || !panel.isConnected) return;
+      list.replaceChildren();
+      for (const account of result.users) {
+        const row = E('article', undefined, 'account-session-row'),
+          detail = E('div'),
+          label = account.isCurrentUser ? 'Завершить другие сеансы' : 'Завершить все сеансы',
+          revoke = E('button', label, 'secondary');
+        detail.append(E('h3', account.name + (account.isCurrentUser ? ' · ваш аккаунт' : '')), E('p', (account.role === 'admin' ? 'Администратор' : 'Сотрудник') + ' · действующих сеансов: ' + account.activeSessions));
+        const expiry = !account.activeSessions ? 'Действующих сеансов нет.' : account.earliestExpiry === account.latestExpiry ? 'Истечение: ' + stamp(account.latestExpiry) : 'Истечение сеансов: от ' + stamp(account.earliestExpiry) + ' до ' + stamp(account.latestExpiry);
+        detail.append(E('small', expiry));
+        revoke.type = 'button';
+        revoke.setAttribute('aria-label', label + ': ' + account.name);
+        revoke.disabled = account.activeSessions <= (account.isCurrentUser ? 1 : 0);
+        revoke.addEventListener('click', () => run(async () => {
+          revoke.textContent = 'Завершение…';
+          try {
+            const result = await api('/api/accounts/revoke-sessions', 'POST', {username: account.name});
+            await confirmMutation('Завершено действующих сеансов: ' + result.revoked + ' · ' + result.username + (result.keptCurrent ? '. Ваш текущий сеанс сохранён.' : '.'));
+          } finally { revoke.textContent = label; }
+        }, revoke));
+        row.append(detail, revoke);
+        list.append(row);
+      }
+      status.textContent = 'Обновлено: ' + stamp(result.serverTime) + '. Ваш текущий сеанс истекает: ' + stamp(result.currentSessionExpires) + '.';
+    } catch (error) {
+      if (current === requestNumber && panel.isConnected) status.textContent = 'Не удалось загрузить сведения. Повторите кнопкой «Обновить сеансы».';
+      throw error;
+    }
+  }
+  async function confirmMutation(confirmation) {
+    // The write is committed; a read failure must not turn it into a failed write.
+    list.replaceChildren();
+    report(confirmation);
+    try { await refresh(); }
+    catch {
+      report(confirmation + ' Список аккаунтов и сеансов не обновлён. Нажмите «Обновить сеансы» или войдите снова.', true);
+    }
+  }
+  accountSessions.refresh = refresh;
+  accountSessions.afterMutation = confirmMutation;
+  refreshButton.addEventListener('click', () => run(refresh, refreshButton));
+  run(refresh, refreshButton);
+}
+
+function settings(){chrome();screen.replaceChildren(E('h1','Данные и доступ'),B('Вернуться',list));if(user.role!=='admin'){screen.append(E('p','Аккаунты, копии и журнал доступны администратору.'));return;}accountSessions(say);screen.append(E('h2','Аккаунты'),E('p','Общая область всех сотрудников. Сеансы можно завершить в этом разделе. Сброс паролей пока недоступен.','muted'));const f=E('form',undefined,'panel');field(f,'Имя нового аккаунта','username');field(f,'Пароль нового аккаунта','password','','password').autocomplete='new-password';select(f,'Роль','role','operator',[{value:'operator',label:'Сотрудник'},{value:'admin',label:'Администратор'}]);const b=E('button','Создать аккаунт');b.type='submit';f.append(b);f.onsubmit=e=>{e.preventDefault();run(async()=>{await api('/api/users','POST',Object.fromEntries(new FormData(f)));f.reset();await accountSessions.afterMutation('Аккаунт создан.');},b);};screen.append(f,E('h2','Копии и журнал'),B('Скачать копию данных',async()=>download(await api('/api/backup'))),B('Показать журнал',async()=>{const x=await api('/api/audit'),d=E('details');d.open=true;d.append(E('summary','Последние события'),E('pre',JSON.stringify(x.events,null,2)));screen.append(d);}));const upload=field(screen,'Восстановить JSON в пустую базу','backup','','file',false);upload.accept='.json,application/json';upload.onchange=()=>run(async()=>{if(!upload.files[0])return;const copy=JSON.parse(await upload.files[0].text()),p=E('section',undefined,'panel');p.append(E('h3','Восстановление в пустую базу'),E('p','Продукт: '+copy.product+'. JSON не подписан, аккаунты и аудит не входят. Существующая область не заменяется.'),B('Подтвердить восстановление',async()=>{state=await api('/api/restore','POST',copy);list();say('Копия восстановлена.');},'primary'));screen.append(p);});focusTitle();}
 run(async()=>{config=await api('/api/config');
 const requestedSection=new URLSearchParams(location.hash.slice(1)).get('section');if(config.collections.some(collection=>collection.key===requestedSection))active=requestedSection;
 for(const [key,label] of Object.entries({})){const collection=config.collections.find(item=>item.key===key);if(collection&&!collection.addLabel)collection.addLabel=label;}user=(await api('/api/session')).user;if(user)await load();else login();});
